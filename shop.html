@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-size: 28px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #fba106;
+        }
+
+        /* Center and align image containers */
+        .w3-row-padding {
+            text-align: center; /* Center align contents */
+            margin: 0 -16px; /* Compensate for default padding */
+        }
+
+        .w3-third {
+            width: 33.33%;
+            display: inline-block; /* Display inline to sit next to each other */
+            vertical-align: top; /* Align to top of container */
+            padding: 0 16px; /* Add spacing between items */
+        }
+
+        .w3-container {
+            text-align: center; /* Center align text within containers */
+        }
+
+        img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class='active' href="#shop">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    <div class="w3-row-padding w3-padding-32">
+        <div class="w3-third">
+            <img src="Screenshot 2024-07-18 at 2.51.29 PM.png" alt="New York" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Kultural Global 'bone' hoodie</b></p>
+                <p>$49.99</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Hoodie</button>
+            </div>
+        </div>
+        <div class="w3-third">
+            <img src="Screenshot 2024-07-18 at 2.51.19 PM.png" alt="Paris" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Kulture Global 'slime' cropped hoodie</b></p>
+                <p>$49.99</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Hoodie</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
